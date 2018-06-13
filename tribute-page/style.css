@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    margin: 5px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* QUI EST-CE ? */
+
+#qui-est-ce {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+    padding-top: 30px;
+    background: #FC427B;
+    color: #FFF;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+h1 {
+    font-size: 2.7em;
+    margin: 20px;
+}
+
+#qui-est-ce p {
+    margin: 40px;
+    max-width: 800px;
+}
+
+@media (min-width: 600px) {
+    #qui-est-ce p {
+        font-size: 1.5em;
+    }
+}
+
+#qui-est-ce img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* CHRONOLOGIE */
+time {
+    font-weight: bold;
+}
+
+#chronologie {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#chronologie h2 {
+    font-size: 1.5em;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#chronologie ul {
+    padding: 3px;
+    list-style: none;
+}
+
+#chronologie li {
+    padding: 15px;
+    max-width: 700px;
+    text-align: justify;
+}
+
+/* SOURCES */
+#sources {
+    margin: 0;
+    padding: 20px;
+    background: #0fbcf9;
+    color: #FFF;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    text-align: center;
+}
+
+#sources a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+}
+
+#sources a:hover {
+    text-decoration: underline;
+}
+
+#sources footer {
+    margin-top: 30px;
+    height: 20px;
+    font-size: 0.9em;
+}
