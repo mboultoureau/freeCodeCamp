@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enquête de satisfaction</title>
+    <meta name="description" content="Une enquête de satisfaction sur l'application Music.">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,600" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <svg width="30" height="23">
+                <rect width="30" height="3" x="0" y="0" fill="#ffffff" />
+                <rect width="30" height="3" x="0" y="10" fill="#ffffff" />
+                <rect width="30" height="3" x="0" y="20" fill="#ffffff" />
+            </svg>
+        </a>
+        <h1>Music</h1>
+        <a href="#">
+            <svg width="30" height="30">
+                <circle cx="15" cy="15" r="15" fill="#ffffff" />
+                <text x="50%" y="72%" text-anchor="middle" font-size="20" fill="#6200ee">?</text>
+            </svg>
+        </a>
+    </header>
+    <main>
+        <section class="subheader">
+            <h2>Enquête de satisfaction</h2>
+        </section>
+        <section class="form">
+            <p>
+                Nous nous efforçons jour après jour d'améliorer votre expérience musicale. Pour cela, vos commentaires sont extrêmement importants.
+                Nous en remercions si vous prenez le temps de répondre à cette courte enquête.
+            </p>
+            <form action="">
+                <div class="field">
+                    <label for="name" class="field-label">Nom d'utilisateur</label>
+                    <input type="text" name="name" id="name" class="field-input" required>
+                    <p class="field-helper">Requis</p>
+                </div>
+
+                <div class="field">
+                    <label for="email" class="field-label">Adresse email</label>
+                    <input type="email" name="email" id="email" class="field-input" required>
+                    <p class="field-helper">Requis</p>
+                </div>
+
+                <div class="field">
+                    <label for="age" class="field-label">Âge</label>
+                    <input type="number" name="age" id="age" class="field-input" min="13" max="120" step="1">
+                    <p class="field-helper">L'âge minimum requis est de 13 ans.</p>
+                </div>
+
+                <div class="radio">
+                    <p>À quelle fréquence écoutez-vous de la musique ?</p>
+                    <div>
+                        <input type="radio" name="frequency" id="always">
+                        <label for="always">Tout le temps</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="frequency" id="everyday">
+                        <label for="everyday">Tous les jours</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="frequency" id="3-days-per-week">
+                        <label for="3-days-per-week">3 jours par semaine</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="frequency" id="everyweek">
+                        <label for="everyweek">Au moins une fois par semaine</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="frequency" id="less-than-weekly">
+                        <label for="less-than-weekly">Moins d'une fois par semaine</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="comments" class="field-label">Commentaires</label>
+                    <textarea name="comments" id="comments" class="field-input"></textarea>
+                </div>
+
+                <div class="switche">
+                    <div>
+                        <input type="checkbox" name="cgu" id="cgu" required>
+                        <label for="cgu">J'accepte que les données seront utilisés à des fins analytiques et peuvent être conservés 1 an.</label>
+                        <a href="#">En savoir plus</a>
+                        <p class="field-helper">Requis</p>
+                    </div>
+                </div>
+
+                <button type="submit">ENVOYER</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
