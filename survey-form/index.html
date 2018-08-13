@@ -29,6 +29,11 @@
         </a>
     </header>
     <main>
+        <noscript>
+            <div>
+                <p>JavaScript est nécessaire au bon fonctionnement du site web. Merci de l'activer.</p>
+            </div>
+        </noscript>
         <section class="subheader">
             <h2>Enquête de satisfaction</h2>
         </section>
@@ -59,28 +64,56 @@
                 <div class="radio">
                     <p>À quelle fréquence écoutez-vous de la musique ?</p>
                     <div>
-                        <input type="radio" name="frequency" id="always">
-                        <label for="always">Tout le temps</label>
+                        <input type="radio" name="frequency" id="always" value="always">
+                        <label for="always">Toujours</label>
                     </div>
 
                     <div>
-                        <input type="radio" name="frequency" id="everyday">
+                        <input type="radio" name="frequency" id="everyday" value="everyday">
                         <label for="everyday">Tous les jours</label>
                     </div>
 
                     <div>
-                        <input type="radio" name="frequency" id="3-days-per-week">
+                        <input type="radio" name="frequency" id="3-days-per-week" value="3-days-per-week">
                         <label for="3-days-per-week">3 jours par semaine</label>
                     </div>
 
                     <div>
-                        <input type="radio" name="frequency" id="everyweek">
+                        <input type="radio" name="frequency" id="everyweek" value="everyweek">
                         <label for="everyweek">Au moins une fois par semaine</label>
                     </div>
 
                     <div>
-                        <input type="radio" name="frequency" id="less-than-weekly">
+                        <input type="radio" name="frequency" id="less-than-weekly" value="less-than-weekly">
                         <label for="less-than-weekly">Moins d'une fois par semaine</label>
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <p>Quelles genres de musiques écoutez-vous ?</p>
+                    <div>
+                        <input type="checkbox" name="frequency" id="pop" value="pop">
+                        <label for="pop">Pop</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="frequency" id="rock" value="rock">
+                        <label for="rock">Rock</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="frequency" id="chill" value="chill">
+                        <label for="chill">Chill</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="frequency" id="electro" value="electro">
+                        <label for="electro">Electro</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="frequency" id="classique" value="classique">
+                        <label for="classique">Classique</label>
                     </div>
                 </div>
 
