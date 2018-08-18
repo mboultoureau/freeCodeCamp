@@ -275,6 +275,31 @@ main {
     color: var(--primary);
 }
 
+/* DROPDOWN */
+.selection {
+    display: flex;
+    flex-direction: column;
+}
+
+#dropdown {
+    margin-top: 10px;
+    padding: 14px;
+
+    font-size: 1em;
+    color: var(--input-text);
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid var(--input-container);
+    transition: border 0.3s;
+    outline: none;
+}
+
+#dropdown:focus {
+    background: var(--background);
+    border: 2px solid var(--primary);
+}
+
 /* SWITCHES */
 
 .switche {
