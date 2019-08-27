@@ -1,0 +1,17 @@
+.Loading {
+    height: 50px;
+    width: 50px;
+    border: 10px solid #CCC;
+    border-radius: 50%;
+    border-top: 10px solid #9b59b6;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,18 @@
+.Quote {
+    height: 150px;
+}
+
+.Quote .Text {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    margin: 10px;
+    text-align: center;
+}
+
+.Quote .Author {
+    text-align: right;
+    margin: 10px;
+}
