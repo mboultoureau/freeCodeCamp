@@ -32,12 +32,12 @@ class MainBox extends React.Component {
     }
 
     getNewQuote(update) {
-        fetch('https://api.quotable.io/random')
+        fetch('https://thesimpsonsquoteapi.glitch.me/quotes')
             .then(response => response.json())
             .then(data => this.setState({
                 quote: {
-                    author: data.author,
-                    text: data.content
+                    author: data[0].character,
+                    text: data[0].quote
                 },
                 isLoading: false
             }));
