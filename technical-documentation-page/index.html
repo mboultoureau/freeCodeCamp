@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Utilisation de base des canvas</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="L'élément_canvas">
+            <header><h2>L'élément <em>canvas</em></h2></header>
+            <p>Commençons par regarder l'élément <em>&lt;canvas&gt;</em> lui-même.</p>
+            <code>&lt;canvas id="tutoriel" width="150" height="150"&gt;&lt;canvas&gt;</code>
+            <p>
+                Ceci ressemble beaucoup à l'élément &lt;img&gt;. La seule différence est qu'il n'y a pas les attributs
+                <em>src</em> et
+                <em>alt</em>. L'élément <em>&lt;canvas&gt;</em> a seulement deux attributs : <em>width</em> et
+                <em>height</em> («
+                largeur » et «
+                hauteur »).
+                Ces
+                deux attributs sont optionnels et peuvent aussi être fixés à travers le DOM. Quand les attributs
+                width et height ne sont pas spécifiés, le canvas sera initialement large de 300 pixels et haut de
+                150 pixels. Les dimensions du canvas peuvent être modifiés par du CSS, mais l'image sera dessinée
+                selon les valeurs width et height du canvas et ensuite étirée pour afficher dans l'espace donné par
+                le CSS.
+            </p>
+            <aside>
+                Note : Si l'image semble déformée, essayez de spécifier de manière explicite vos attributs width et
+                height dans l'élément &lt;canvas&gt;, et de ne pas utiliser de CSS.
+            </aside>
+            <p>
+                L'attribut <em>id</em> n'est pas spécifique à l'élément <em>&lt;canvas&gt;</em>. C'est en fait un des
+                attributs HTML de base qui
+                peut être utilisé par presque tous les éléments HTML. C'est toujours mieux d'assigner une <em>id</em>
+                car ça
+                facilite beaucoup l'identification du <em>canvas</em> dans le code <em>javascript</em>.
+            </p>
+            <p>
+                L'élément <em>&lt;canvas&gt;</em> peut être stylisé comme n'importe quelle image normale (marges, contours,
+                    arrière-plan, etc). Si aucun style n'est donné, le canvas sera par défaut complètement transparent.
+                    Il faut noter que peu importe quels styles sont utilisés, le style n'affectera pas l'acte de
+                    dessiner sur le canvas. Nous verrons en détail la stylisation des canvas plus tard dans ce tutoriel.
+            </p>
+            <h3>
+                Contenu de repli
+            </h3>
+        </section>
+        <section class="main-section" id="La_nécessité_de_la_balise_canvas">
+            <header>La nécessité de la balise canvas</header>
+        </section>
+        <section class="main-section" id="Le_contexte_de_rendu">
+            <header>Le contexte de rendu</header>
+        </section>
+        <section class="main-section" id="Vérification_de_la_prise_en_charge">
+            <header>Vérification de la prise en charge</header>
+        </section>
+        <section class="main-section" id="Un_modèle_basique">
+            <header>Un modèle basique</header>
+        </section>
+        <section class="main-section" id="Un_exemple_simple">
+            <header>Un exemple simple</header>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+        const projectName = 'technical-docs-page';
+        localStorage.setItem('example_project', 'Technical Docs Page');
+    </script>
+</body>
+
+</html>

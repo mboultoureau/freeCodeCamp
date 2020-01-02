@@ -1,0 +1,36 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    background-color: #333;
+    color: #FFF;
+    font-weight: 100;
+    width: fit-content;
+}
+
+p {
+    text-align: justify;
+}
+
+em {
+    background: #DDD;
+    padding: 1px;
+    font-style: normal;
+}
+
+code {
+    background: #DDD;
+    padding: 10px;
+}
+
+aside {
+    background: #fff3d4;
+    border-left: 2px solid #f6b73c;
+    padding: 10px;
+}
